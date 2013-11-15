@@ -17,7 +17,7 @@ karamazov = Book.new("The Brothers Karamazov", "Fyodor Dostoesvky")
 feynman = Book.new("Surely You're Joking Mr. Feynman", "Richard Feynman")
 finnegan = Book.new("Finnegans Wake", "James Joyce")
 k_and_r = Book.new("The C Programming Language", "Kernighan and Ritchie")
-puts "-------------------------"
+puts "Created books"
 
 puts "add our books to the library"
 library.add_book(stranger)
@@ -35,12 +35,12 @@ puts "-------------------------"
 puts "check out two books for mike"
 library.check_out(mike, stranger)
 library.check_out(mike, nausea)
-puts "-------------------------"
+puts "Mike has checked out two books"
 
 puts "check out two books for gilbert"
 library.check_out(gilbert, karamazov)
 library.check_out(gilbert, feynman)
-puts "-------------------------"
+puts "Gilbert has checked out two books"
 
 puts "list all five books in the library's catalog with their statuses:"
 library.list_books
@@ -53,7 +53,7 @@ puts "-------------------------"
 
 puts "this book should still be available since it failed before"
 library.check_out(ricardo, finnegan)
-puts "-------------------------"
+puts "Ricardo checked out finnegan"
 
 puts "but this book should fail since it is already checked out"
 library.check_out(ricardo, stranger)
